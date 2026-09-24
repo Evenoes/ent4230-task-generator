@@ -1,6 +1,7 @@
 {
   "name": "ent4230-task-generator",
   "private": true,
+  "packageManager": "pnpm@10.30.2",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

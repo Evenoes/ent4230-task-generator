@@ -4,6 +4,12 @@ A small study app for practising formulas from ENT4230 Topics 1–4.
 
 Each round contains 10 calculation tasks with realistic randomized values. Tasks marked as high priority in the lecture material appear more frequently, while standard tasks are still included for broader practice.
 
+## Live site
+
+[Open the ENT4230 Task Generator](https://evenoes.github.io/ent4230-task-generator/)
+
+The site is hosted by GitHub Pages and is automatically rebuilt when changes are pushed to `main`.
+
 ## Features
 
 - 10 different tasks per round
@@ -35,6 +41,12 @@ pnpm lint     # Run ESLint
 pnpm build    # Type-check and create a production build
 pnpm preview  # Preview the production build
 ```
+
+## Deployment
+
+The workflow in `.github/workflows/deploy-pages.yml` installs dependencies, builds the Vite app, and publishes the `dist` directory to GitHub Pages.
+
+Vite uses `/ent4230-task-generator/` as its production base path because this is a project site rather than a user site.
 
 ## Project structure
 
@@ -90,4 +102,3 @@ Each template defines:
 7. Run `pnpm lint` and `pnpm build` before committing.
 
 Authored source files should remain focused and stay below approximately 250 lines.
-
